@@ -18,7 +18,13 @@ body {
     padding: 20px;
     text-align: center;
     background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/pexels-photo-3218467.jpeg);
+    background-attachment: fixed; /* Фон остается на месте при прокрутке */
+    background-position: center; /* Центрирование фона */
+    background-size: cover; /* Растягивание фона на всю ширину */
+    height: 400px; /* Высота секции */
+    /* Остальные стили */
 }
+
 
 #menu-container {
     position: absolute;
@@ -126,6 +132,43 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
+#cheked {
+  width: 100%;
+  min-height: 810px;
+}
+
+.u-layout-wrap {
+  display: flex;
+  flex-direction: column;
+  height:fit-content;
+}
+
+.u-layout-row {
+  display: flex;
+}
+
+.u-layout-cell {
+  width: 33.33%; /* Ширина каждого квадрата */
+  min-height: 405px;/* Высота каждого квадрата */
+  position: relative;
+}
+
+.u-image-1, .u-image-2, .u-image-3 {
+  background-size: cover;
+  background-position: center;
+}
+.u-image-1 {
+  background-image: url('images/pexels-marta-dzedyshko-2067396.jpg');
+}
+.u-image-2 {
+  background-image: url('images/pexels-photo-4099237.jpeg');
+}
+.u-image-3 {
+  background-image: url('images/pexels-photo-949069.jpeg');
+}
+
+
+/* Добавьте стили для других квадратов по аналогии */
     </style>
 </head>
 <body>
@@ -140,6 +183,44 @@ body {
     </div>
     <div id="header">
         <h1>О нашем ресторане</h1>
+    </div>
+    <div id="about">
+        <h6>about our restaurant</h6>
+        <h3>Exclusive <i><b>restaurant in Paris</b></i>, the ultimate way to get amazing food from the best chefs in the city. <b><i>Great atmosphere included.</i></b>
+        </h3>
+    </div>
+    <div id="cheked">
+        <div class="u-layout-wrap">
+            <div class="u-layout">
+              <div class="u-layout-row">
+                <!-- Первый ряд -->
+                <div class="u-layout-cell u-image-1"></div>
+                <div class="u-layout-cell u-layout-cell-2">
+                    <h6>history</h6>
+                    <h3>Strange story of the emergence of healthy food</h3>
+                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="u-layout-cell u-image-2"></div>
+              </div>
+              <div class="u-layout-row">
+                <!-- Второй ряд -->
+                <div class="u-layout-cell u-layout-cell-4">
+                    <h6>comunity</h6>
+                    <h3>Healthy food in social networks, with us interesting</h3>
+                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="u-layout-cell u-image-3"></div>
+                <div class="u-layout-cell u-layout-cell-6">
+                    <h6>philosophy</h6>
+                    <h3>Only the best food, the best musicians the best guests</h3>
+                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <a href="#">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     <div id="contact">
         <h2>Свяжитесь с нами</h2>
@@ -160,8 +241,12 @@ function toggleMenu() {
     var menu = document.getElementById("popup-menu");
     var overlay = document.getElementById("overlay");
     overlay.classList.toggle("hidden");
-
     menu.classList.toggle("show");
+    window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    document.getElementById('header').style.backgroundPosition = 'center ' + (scrollPosition * 0.5) + 'px';
+});
+
 }
     </script>
 </body>

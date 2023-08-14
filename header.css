@@ -1,0 +1,57 @@
+#header {
+    background-color: #35424a;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/pexels-photo-3218467.jpeg);
+    background-attachment: fixed;
+    /* Фон остается на месте при прокрутке */
+    background-position: center;
+    /* Центрирование фона */
+    background-size: cover;
+    /* Растягивание фона на всю ширину */
+    min-height: 812px;
+    /* Высота секции */
+    /* Остальные стили */
+
+}
+
+  
+  .header-box {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .header-box img {
+    max-width: 100%;
+    height: auto;
+    margin: 100px auto 0;
+  }
+  
+  .header-box h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 700;
+    font-size: 3.75rem;
+    margin: 120px auto 0;
+  }
+  
+  .header-box p {
+    font-size: 1em;
+    margin: 20px auto 0;
+  }
+  
+  .icon {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 115px auto 0;
+  }
+  
+  .icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #000;
+  }
+  

@@ -1,0 +1,59 @@
+#cook {
+    min-height: 479px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sheet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.list {
+    min-height: 272px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 3;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 50px;
+
+  border-radius: 50%;
+  flex: 1;
+  text-align: center;
+
+    min-height: 300px;
+    
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1em;
+  margin: 0;
+}

@@ -1,0 +1,57 @@
+#events-section {
+    text-align: center;
+}
+
+.events-content {
+    min-height: 716px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Ваши стили для контейнера событий */
+}
+
+.events-content h6{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 60px auto 0;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+.events-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px auto 0;
+    font-family: 'Playfair Display', serif !important;
+    line-height: 1.1;
+}
+
+.events-list {
+    display: grid;
+    min-height: 331px;
+    grid-template-columns: repeat(3, calc(33.3333% - 7px));
+    grid-gap: 10px;
+    margin: 30px auto 0 0;
+}
+
+.event-item {
+    /* Ваши стили для каждого элемента события */
+}
+
+.read-more-btn {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 30px auto 60px;
+    padding: 10px 73px;
+    /* Другие стили для кнопки "читать далее" */
+}
+
+.read-more-btn:hover {
+    background-color: black;
+    color: white;
+}

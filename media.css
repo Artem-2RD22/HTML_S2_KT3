@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+    .u-sheet {
+      width: 1140px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .u-sheet {
+      width: 940px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .u-sheet {
+      width: 720px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .u-sheet {
+      width: 540px;
+    }
+  }
+  @media (max-width: 575px) {
+    .u-sheet {
+      width: 340px;
+    }
+  }

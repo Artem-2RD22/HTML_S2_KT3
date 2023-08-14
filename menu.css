@@ -1,0 +1,43 @@
+#guest-menu {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    /* Вы можете изменить цвет фона */
+}
+
+.menu-content h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.menu-container h2 {
+    font-family: 'Playfair Display', serif;
+    /* Убедитесь, что шрифт подключен */
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    width: 30%;
+    /* Вы можете изменить ширину элементов меню */
+    margin-bottom: 20px;
+}
+
+.menu-item h6 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #555;
+}

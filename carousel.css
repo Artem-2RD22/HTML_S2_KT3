@@ -1,0 +1,66 @@
+.carousel {
+    /* Ваши стили для карусели */
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+}
+
+.carousel-indicators .active {
+    background-color: #202020;
+}
+
+.carousel-inner {
+
+    /* Ваши стили для внутреннего содержимого карусели */
+}
+
+.carousel-item {
+    min-height: 800px;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* Ваши стили для каждого элемента карусели */
+}
+
+
+
+.carousel-content {
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-content h6{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 60px auto 0;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+.carousel-content h1{
+    font-size: 3rem;
+    margin: 30px auto 60px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    /* Ваши стили для кнопок управления каруселью */
+}
+
+.carousel-item-bg1 {
+    background-image: url('images/pexels-photo-745988.jpeg');
+}
+
+.carousel-item-bg2 {
+    background-image: url('images/restaurant-love-romantic-dinner.jpg');
+}

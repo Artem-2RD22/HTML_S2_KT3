@@ -60,14 +60,16 @@ body {
 }
 
 #popup-menu {
-    position: absolute;
-    top: 40px;
+    position: fixed; /* Изменено с absolute на fixed */
+    top: 0;
     left: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    width: 200px;
+    height: 100%; /* Растягивает по вертикали на всю страницу */
+    background-color: black; /* Черный фон */
+    color: white; /* Белый текст */
+    z-index: 1; /* Убедитесь, что меню находится поверх остального содержимого */
+    overflow-y: auto; /* Добавьте прокрутку, если содержимое превышает высоту экрана */
+    padding: 20px; /* Отступ для содержимого */
 }
 
 #popup-menu a {
@@ -75,12 +77,14 @@ body {
     padding: 8px;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: white; /* Белый текст для ссылок */
 }
 
 #popup-menu a:hover {
     background-color: #f1f1f1;
+    color: black; /* Черный текст при наведении */
 }
+
 
 .hidden {
     display: none;

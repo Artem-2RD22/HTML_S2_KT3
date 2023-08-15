@@ -6,18 +6,20 @@
 .u-layout-wrap {
     display: flex;
     flex-direction: column;
-    height: fit-content;
 }
+
 
 .u-layout-row {
     display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
 }
 
 .u-layout-cell {
-    width: 33.33%;
-    /* Ширина каждого квадрата */
-    min-height: 405px;
-    /* Высота каждого квадрата */
+    flex: 0 0 33.33333333%;
+
     position: relative;
     text-align: center;
     display: flex;
@@ -54,6 +56,10 @@
     padding: 0;
     border-color: #000000 !important;
     color: #000000 !important;
+}
+
+.u-layout-cell a:hover{
+    text-decoration: none;
 }
 
 .u-image-1,

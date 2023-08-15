@@ -1,5 +1,6 @@
 #events-section {
     text-align: center;
+    margin: 0 auto;
 }
 
 .events-content {
@@ -7,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Ваши стили для контейнера событий */
+
 }
 
 .events-content h6{
@@ -35,9 +36,6 @@
     margin: 30px auto 0 0;
 }
 
-.event-item {
-    /* Ваши стили для каждого элемента события */
-}
 
 .read-more-btn {
     border: 2px solid black;
@@ -48,7 +46,7 @@
     letter-spacing: 2px;
     margin: 30px auto 60px;
     padding: 10px 73px;
-    /* Другие стили для кнопки "читать далее" */
+
 }
 
 .read-more-btn:hover {

@@ -1,7 +1,6 @@
 #frac {
     display: flex;
     flex-wrap: wrap;
-    min-height: 707px;
   }
   
   .layout-wrap {
@@ -17,7 +16,6 @@
   }
   
   .image-container {
-    flex: 50%;
     display: flex;
     flex-direction: column;
   }
@@ -26,18 +24,20 @@
   .image-2,
   .image-3,
   .image-4 {
-    height: 100%; /* Вы можете изменить высоту */
+    height: 100%; 
     background-size: cover;
     background-position: center;
+    
   }
   
   .image-1 {
-    background-image: url('images/restaurant-love-romantic-dinner.jpg'); /* Укажите URL изображения */
+    background-image: url('images/restaurant-love-romantic-dinner.jpg'); 
+    background-position-y: 20%!important;
   }
   
   .image-2 {
-    flex: 2;
-    background-image: url('images/pexels-photo-5491337.jpeg'); /* Укажите URL изображения */
+    background-image: url('images/pexels-photo-5491337.jpeg'); 
+    background-position-y: 70%!important;
   }
   
   .image-row {
@@ -48,13 +48,13 @@
   .image-3,
   .image-4 {
     flex: 50%;
-    height: 353.5px; /* Вы можете изменить высоту */
+    height: 353.5px; 
   }
   
   .image-3 {
-    background-image: url('images/pexels-photo-2762942.jpeg'); /* Укажите URL изображения */
+    background-image: url('images/pexels-photo-2762942.jpeg'); 
   }
   
   .image-4 {
-    background-image: url('images/pexels-marta-dzedyshko-2067396.jpg'); /* Укажите URL изображения */
+    background-image: url('images/pexels-marta-dzedyshko-2067396.jpg'); 
   }
